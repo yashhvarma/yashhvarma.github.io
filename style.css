@@ -157,7 +157,7 @@ nav ul li a:hover::after{
 .services-list div{
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     border-radius: 10px;
     transition: backgrpund 0.5s, transform 0.5s;
@@ -183,10 +183,9 @@ nav ul li a:hover::after{
     background-color: rgb(0, 255, 255);
     transform: translateY(-15px);
 }
-.services-list div a:hover{
+.services-list div:hover a{
     color: black;
 }
-
 /*-----------------------------Portfolio-----------------------*/
 #portfolio{
     padding: 50px 0;
@@ -303,6 +302,9 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
+    color: white;
+}
+.btn.btn2:hover{
     background: cyan;
     color: black;
 }
@@ -325,6 +327,12 @@ form btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+#submit{
+    background: none;
+}
+#submit:hover{
+    background: cyan;
 }
 .copyright{
     width: 100%;

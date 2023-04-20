@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 .header{
     background: black;
@@ -10,7 +14,6 @@
 .nav{
     height: 20vh;
     width: 100%;
-
     background-image: url(image/nav.jpeg);
 }
 .container{
@@ -62,14 +65,15 @@
     color: black;
 }
 @media only screen and (max-width: 600px) {
+    .header{ 
+        height: auto;
+        background: black;
+        padding-bottom: 30px;
+    }
     .left{
         flex-basis: 100%;
     }
     .right{
         margin-top: 50px;
     }
-
 }
-/* .left{
-    margin-top: 30px;
-} */
