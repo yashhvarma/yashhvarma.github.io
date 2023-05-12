@@ -127,6 +127,14 @@
                         <a href="pdfs/TuringCup.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <div class="work">
+                    <img src="image/greeting_card.png" alt="Image">
+                    <div class="layer">
+                        <h3>Newton School</h3>
+                        <p>Competitive Programming</p>
+                        <a href="image/greeting_card.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
             <a href="MyAc.html" class="btn">See More</a>
         </div>
@@ -187,7 +195,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Anmous | Made with ❤️</p>
+        <p>&copy; YV | Made with ❤️</p>
     </div>
 </div>
     <script>
@@ -208,15 +216,20 @@
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("nav").style.top = "0%";
-        } else {
-            document.getElementById("nav").style.top = "-100%";
-            if(flag==1){
-                menu();
+        var sw  = window.screen.availWidth;
+        if(sw<=600){
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0%";
+                document.getElementById("nav").style.transition = "0.4s";
+            } else {
+                document.getElementById("nav").style.top = "-100%";
+                document.getElementById("nav").style.transition = "o.5s";
+                if(flag==1){
+                    menu();
+                }
             }
-        }
-        prevScrollpos = currentScrollPos;
+            prevScrollpos = currentScrollPos;
+            }
         }
     </script>
     <script>
