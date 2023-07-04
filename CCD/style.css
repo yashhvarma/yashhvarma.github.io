@@ -17,6 +17,7 @@ body{
     overflow: hidden;
 }
 .radio{ 
+    cursor: pointer;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -26,6 +27,7 @@ body{
     margin-right: 0em;
 }
 .radio input[type="radio"]{
+    cursor: pointer;
     appearance: none;
     border:2px solid white;
     height: 1em;
@@ -138,9 +140,9 @@ body{
     transform: translateX(200%);
 
 }
-.img-btn:hover i{
+/* .img-btn:hover i{
     margin-left: 100px ;
-}
+} */
 .img{
     display: flex;
 }
@@ -194,7 +196,7 @@ body{
 }
 
 .history-section .img-btn{
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 }
 
 
